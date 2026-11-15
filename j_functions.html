@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+</head>
+<body>
+    <h3>Function</h3>
+<script>
+
+// sum of two numbers
+
+    function addNumbers(a,b){
+        sum = a+b
+        return sum;
+    }
+    console.log(addNumbers(2,5));
+
+
+//even or odd
+
+function checkEvenOdd(num) {
+    if (num %2==0){
+        return(num +''+"is Even Number");
+    }
+    else{
+        return(num +''+"is Odd Number");
+    }
+} 
+console.log(checkEvenOdd(57)); 
+
+
+
+//largest of three numbers
+
+function findLargest(a,b,c){
+    if (a>=b && a>=c){
+        return ("a is greater");
+    }
+    else if(b>=a && b>=c){
+        return ("b is greater");
+    }
+    else{
+        return ("c is greater");
+    }
+  
+}
+ console.log(findLargest(34,45,65));
+
+
+
+//factorial
+
+function factorial(num){
+    let fact = 1;
+    for(let i=1;i<=num;i++){
+        fact = fact * i;
+
+    }
+    return fact;
+}
+console.log(factorial(5));
+
+
+
+//reverse a string
+
+function reverseString(str) {
+    let reverse = "";
+    for (let i = str.length - 1; i >= 0; i--) {
+        reverse = reverse + str[i];
+    }
+    return reverse;
+}
+console.log(reverseString("Nivetha"));
+
+
+
+//count vowels in string
+
+function countVowels(str) {
+    let count = 0;
+    for (let i = 0; i < str.length; i++) {
+        if ("aeiouAEIOU".includes(str[i])) {
+            count++;
+        }
+    }
+    return count;
+}
+console.log(countVowels("Hello World"));
+
+
+</script>
+</body>
+</html>
